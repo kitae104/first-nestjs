@@ -21,3 +21,12 @@
 
 6. 서비스 생성
 - nest g service boards --no-spec
+
+7. 모델 추가 
+- 직접 파일로 생성 
+- board.model.ts
+
+8. 추가 모듈 설치 
+- npm install --save uuid
+- npm install --save class-validator class-transformer
+- npm install --save @nestjs/typeorm typeorm mysql2
