@@ -33,6 +33,7 @@
 - npm install --save uuid
 - npm install --save class-validator class-transformer
 - npm install --save @nestjs/typeorm typeorm mysql2
+- npm install --save bcryptjs
 
 # Backend 구성 
 1. Entity 생성 
@@ -40,3 +41,5 @@
 
 2. Repository 생성 
 - user.repository.ts
+
+3. 모듈에 정보 등록 
