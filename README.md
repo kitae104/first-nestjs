@@ -1,5 +1,7 @@
 # NestJS 시작하기
+- https://github.com/nestjskr/docs.nestjs.kr
 
+# 세팅 
 1. NestJS CLI 설치
 
 - npm install -g @nestjs/cli
