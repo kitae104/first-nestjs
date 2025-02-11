@@ -32,10 +32,13 @@
 - board.model.ts
 
 8. 추가 모듈 설치 
+- npm install -g npm@11.1.0
 - npm install --save uuid
 - npm install --save class-validator class-transformer
 - npm install --save @nestjs/typeorm typeorm mysql2
 - npm install --save bcryptjs
+- npm install @nestjs/jwt @nestjs/passport passport passport-jwt --save
+- npm install @types/passport-jwt --save
 
 # Backend 구성 
 1. Entity 생성 
