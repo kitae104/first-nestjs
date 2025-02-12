@@ -6,6 +6,7 @@ import { UserRepository } from './user.repository';
 import { User } from './user.entity';
 import { JwtModule } from '@nestjs/jwt';
 import { PassportModule } from '@nestjs/passport';
+import { ConfigModule, ConfigService } from '@nestjs/config';
 
 @Module({
   imports: [
@@ -17,6 +18,7 @@ import { PassportModule } from '@nestjs/passport';
       }
     }),
     TypeOrmModule.forFeature([User]), // TypeOrmModule을 AuthModule에 추가
+    ConfigModule,
   ],
   controllers: [AuthController],
   providers: [AuthService, UserRepository, JwtModule],

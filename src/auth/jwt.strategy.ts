@@ -5,13 +5,14 @@ import { UserRepository } from "./user.repository";
 import { ExtractJwt, Strategy } from "passport-jwt";
 
 @Injectable()
-export class JwtStrategy extends PassportStrategy(Strategy) {
+export class JwtStrategy extends PassportStrategy(Strategy, 'jwt') {
   constructor(
     @InjectRepository(UserRepository)
     private userRepository: UserRepository,
     ) {
     super({
       secretOrKey: 'Secret1234',  // 임의로 설정
+      ignoreExpiration: false,
       jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(), // 헤더에서 JWT를 추출합니다.
     });
   }
